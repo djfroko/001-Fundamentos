@@ -12,6 +12,8 @@ public class ejercicio3 {
         int hora = sc.nextInt();
 
         if (hora <=24) {
+            //lo metemos dentro de un if para si se mete un numero por encima del 24
+            // pinte el mensaje de error, despues del else.
             switch (hora) {
 
                 case 7:
