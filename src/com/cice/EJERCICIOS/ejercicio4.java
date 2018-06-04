@@ -1,4 +1,4 @@
-package com.cice.EJERCICIO2;
+package com.cice.EJERCICIOS;
 //Realizar un programa que calcule el factorial de un número existente en una
 // determinada variable entera.
 //El factorial de un número es el resultado de multiplicar entre sí todos los números naturales menores
