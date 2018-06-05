@@ -9,37 +9,31 @@ public class ejercicio5 {
 
     public static void main(String[] args) {
 
-        int i = 0;
-
         int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-        int num = 0;
-        for (int a : array) {
-
-            num += a;
-
+        int resultado = 0;
+        //bucle foreach
+        for (int i : array) {
+            //resultado += i; podriamos hacerlo asi para escribir menos.
+            resultado = resultado + i;
 
         }
-        System.out.println("la suma de los valores es: " + num);
+        System.out.println("la suma de los valores es: " + resultado);
         System.out.println("=========================");
 
-
-        int[] auxiliar = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-        int resultado = 0;
-        for (int j : auxiliar) {
-            resultado = resultado + j;
+        //bucle convencional
+        for(int i=0; i<array.length; i++){
+            int auxiliar = array[i];
         }
         System.out.println("la suma de los valores es: " + resultado);
 
+        System.out.println("=========================");
 
-        //while
-        while (i < 10) {
-            System.out.println("i vale " + i++);
 
-        }
-        System.out.println("======================");
-        do{
-            System.out.println("i vale " + i++);
-        }while( i < 10);
+//FOREACH
+
+
+
+
     }
 
 }
