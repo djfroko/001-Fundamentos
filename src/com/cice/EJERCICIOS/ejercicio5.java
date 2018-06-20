@@ -1,39 +1,38 @@
-package com.cice.EJERCICIOS;
 
-public class ejercicio5 {
 
-    //Realizar un programa que, dado un array de números enteros, calcule la suma de todos los números
-    //contenidos en el mismo y la muestre por pantalla.
-    //Se empleará una instrucción foreach para realizar el recorrido del array.
+import java.util.ArrayList;
+import java.util.List;
+
+
+class Monchito {
 
 
     public static void main(String[] args) {
-
-        int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-        int resultado = 0;
-        //bucle foreach
-        for (int i : array) {
-            //resultado += i; podriamos hacerlo asi para escribir menos.
-            resultado = resultado + i;
-
-        }
-        System.out.println("la suma de los valores es: " + resultado);
-        System.out.println("=========================");
-
-        //bucle convencional
-        for(int i=0; i<array.length; i++){
-            int auxiliar = array[i];
-        }
-        System.out.println("la suma de los valores es: " + resultado);
-
-        System.out.println("=========================");
-
-
-//FOREACH
-
-
-
-
+        Monchito m = new Monchito();
+        String cadena = m.cadenaLarga();
+        System.out.println("La cadena más larga es: " + cadena);
     }
 
+    public String cadenaLarga() {
+
+        String cadena1 = "hola";
+        String cadena2 = "hola que tal";
+        String cadena3 = "hola machote";
+        String cadena4 = "hola que tal estas";
+        List<String> cadenas = new ArrayList();
+
+        cadenas.add(cadena1);
+        cadenas.add(cadena2);
+        cadenas.add(cadena3);
+        cadenas.add(cadena4);
+
+        String cadena_larga = "";
+        for (String cadena : cadenas) {
+            if (cadena.length() > cadena_larga.length()) {
+                cadena_larga = cadena;
+            }
+        }
+
+        return cadena_larga;
+    }
 }
