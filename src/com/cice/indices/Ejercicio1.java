@@ -22,7 +22,7 @@ public class Ejercicio1 {
         System.out.println("introduce la quinta nota");
         Double nota5 = sc.nextDouble();
 
-        System.out.println(" la nota media es " + (nota1+nota2+nota3+nota4+nota5)%listaNotas.size());
+        System.out.println(" la nota media es " + (nota1+nota2+nota3+nota4+nota5)/listaNotas.size());
 
 
 
