@@ -39,9 +39,40 @@ public class Basicos {
         System.out.println("=========================================");
 
 
+        int a = 3;
+
+        System.out.println(a + (a % 2 == 0 ? " es par " : " es impar"));
+
+        System.out.println("=========================================");
+
+        int b = 5;
+
+
+        if (b>=0) {
+
+
+            System.out.println("el numero es positivo");
+
+        } else {
+
+
+            System.out.println("el numero es negativo");
+
+
+
+
+        }
+        System.out.println("=========================================");
+
+        int c =100;
+        System.out.println(c + (c % 2 ==0 ? " es par" : " es impar"));
+        System.out.println(c + ( c >= 0 ? " es positivo" : "es negativo"));
+        System.out.println( c + ( c % 3 ==0 ? " es multiplo de 3" : " no es multiplo de 3"));
+        System.out.println( c + ( c % 10 ==0 ? " es multiplo de 10" : " no es multiplo de 10"));
+        System.out.println( c + ( c % 100 ==0 ? " es multiplo de 100" : " no es multiplo de 100"));
+        System.out.println("=========================================");
+
 
 
     }
-
-
 }
