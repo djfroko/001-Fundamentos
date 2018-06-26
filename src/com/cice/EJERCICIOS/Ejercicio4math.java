@@ -20,9 +20,9 @@ public class Ejercicio4math {
         int suma = 0;
 
 
-        for ( int i = numeroMenor ; i < numeroMayor ; i++){
+        for ( int i = numeroMenor ; i <= numeroMayor ; i++){
 
-            suma += numeroMenor;
+            suma += i;
         }
 
         System.out.println(suma);
