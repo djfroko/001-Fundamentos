@@ -72,7 +72,7 @@ public class Basicos3 {
         else if (n2 > n3)
             System.out.println("el mayor es: " + n2);
         else
-            System.out.println("el mayor es: " + n3);*/
+            System.out.println("el mayor es: " + n3);
 
         System.out.println("=======================================");
 
@@ -91,12 +91,74 @@ public class Basicos3 {
         else
             System.out.println("Hora incorrecta");
 
+        System.out.println("=======================================");
+
+        //Programa que lea una variable entera mes y compruebe si el valor corresponde a un mes de
+        // 30, 31 o 28 días. Se mostrará además el nombre del mes. Se debe comprobar que el
+        // valor introducido esté comprendido entre 1 y 12.
+
+        int mes;
+        System.out.print("Introduzca número de mes: ");
+        mes =  entrada.nextInt();
+        if(mes < 1 || mes > 12) //se comprueba que el valor del mes es correcto
+            System.out.println("Mes incorrecto");
+        else{  //si el mes es correcto
+            switch(mes){  //se muestra el nombre mediante una instrucción switch
+                case 1: System.out.print("Enero");
+                    break;
+                case 2: System.out.print("Febrero");
+                    break;
+                case 3: System.out.print("Marzo");
+                    break;
+                case 4: System.out.print("Abril");
+                    break;
+                case 5: System.out.print("Mayo");
+                    break;
+                case 6: System.out.print("Junio");
+                    break;
+                case 7: System.out.print("Julio");
+                    break;
+                case 8: System.out.print("Agosto");
+                    break;
+                case 9: System.out.print("Septiembre");
+                    break;
+                case 10: System.out.print("Octubre");
+                    break;
+                case 11: System.out.print("Noviembre");
+                    break;
+                case 12: System.out.print("Diciembre");
+                    break;
+            }
+            // mostrar si es un mes de 30, 31 0 28 días
+            if(mes == 4 || mes == 6 || mes == 9 || mes == 11)
+                System.out.println(" es un mes de 30 días");
+            else if(mes == 2)
+                System.out.println(" es un mes de 28 días");
+            else
+                System.out.println(" es un mes de 31 días");
+        }*/
 
 
+        System.out.println("=======================================");
+        // Programa Java que muestre los números del 1 al 100 utilizando la instrucción while
 
+        System.out.println("Numeros del 1 al 100: ");
+
+        int numeros = 1;
+
+        while(numeros <= 100){
+            System.out.println(numeros);
+            numeros++;
+        }
 
 
 
 
     }
+
+
+
+
+
 }
+
