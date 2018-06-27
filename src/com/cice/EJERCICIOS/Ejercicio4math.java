@@ -25,7 +25,7 @@ public class Ejercicio4math {
             suma += i;
         }
 
-        System.out.println(suma);
+        System.out.println("la suma de todos los numero aleatorios es: " + suma);
 
 
         }
