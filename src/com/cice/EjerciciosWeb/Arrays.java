@@ -44,7 +44,7 @@ public class Arrays {
 
         for (int i = 0;i<array2.length;i++){
             System.out.println("En el indice "+i+" el valor es "+ array2[i]);
-        }*/
+        }
         System.out.println("================================");
 
         System.out.println("introdice tamaño del array");
@@ -63,11 +63,52 @@ public class Arrays {
                     primo = false;
                 contador++;
             }
+
             System.out.println("la posicion " +i+ " tiene un numero primo " + array3[i]);
         }
 
-    }
+        System.out.println("================================");
+        //Crea un array de números de 100 posiciones, que contendrá los números del 1 al 100.
+        // Obtén la suma de todos ellos y la media.
+
+        int[] array4 = new int[100];
+        int suma = 1;
+        double media = 0;
+
+        for (int i = 0; i<array4.length ;i++){
+            array4[i]=i+1;
+            suma = suma + i;
+            //System.out.println(array4[i]);
+
+         }
+         media =(double) suma/array4.length;
+
+        System.out.println("la suma de todos los numeros del array es: " + suma);
+        System.out.println("la media del array es " + media);
+
+        */
+        System.out.println("================================");
+
+        char [] array5 = new char[25];
+
+        char letra = 'A';
+        for (int i = 0;i<array5.length;i++){
+            array5[i]= letra;
+            letra++;
+            System.out.println(array5);
+
         }
+
+
+
+
+
+
+
+
+
+    }
+}
 
 
 
