@@ -89,15 +89,36 @@ public class Arrays {
         */
         System.out.println("================================");
 
-        char [] array5 = new char[25];
+        /*5) Crea un array de caracteres que contenga de la ‘A’ a la ‘Z’ (solo las mayúsculas).
+         Después, ve pidiendo posiciones del array por teclado y si la posicion es correcta,
+         se añadira a una cadena que se mostrara al final, se dejará de insertar cuando se introduzca un -1.
+
+        Por ejemplo, si escribo los siguientes numeros
+        0 //Añadira la ‘A’
+        5 //Añadira la ‘F’
+        25 //Añadira la ‘Z’
+        50 //Error, inserte otro numero
+                -1 //fin
+
+        Cadena resultante: AFZ*/
+
+        char [] array5 = new char[26];
 
         char letra = 'A';
+
         for (int i = 0;i<array5.length;i++){
             array5[i]= letra;
+            //System.out.println(letra);
             letra++;
-            System.out.println(array5);
-
         }
+        System.out.println("introduce una posicion del array");
+        int posicion = sc.nextInt();
+        char guardarPosicion = array5[posicion];
+        System.out.println(guardarPosicion);
+
+
+
+
 
 
 
