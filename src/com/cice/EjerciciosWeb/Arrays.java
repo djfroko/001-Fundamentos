@@ -102,34 +102,55 @@ public class Arrays {
 
         Cadena resultante: AFZ*/
 
-        char [] array5 = new char[26];
+        char[] array5 = new char[26];
 
         char letra = 'A';
 
-        for (int i = 0;i<array5.length;i++){
-            array5[i]= letra;
+        for (int i = 0; i < array5.length; i++) {
+            array5[i] = letra;
             //System.out.println(letra);
             letra++;
         }
-        System.out.println("introduce una posicion del array");
-        int posicion = sc.nextInt();
-        char guardarPosicion = array5[posicion];
-        System.out.println(guardarPosicion);
+        int posicion = 1;
+        String palabra = "";
 
 
+        do {
+            System.out.println("introduce una posicion del array");
 
+            posicion = sc.nextInt();
 
+            if (posicion > 25) {
 
+                System.out.println("==================================================");
+                System.out.println("Posicion incorrecta, vuelva a introducir posicion");
+                System.out.println("==================================================");
 
+            } else if (posicion >= 0) {
 
+                char guardarPosicion = array5[posicion];
+                palabra += guardarPosicion;
+                System.out.println(guardarPosicion);
+            } else if (posicion < 0) {
 
+            }
 
+        } while (posicion != -1);
 
+        System.out.print("Las letras acumuladas son :");
 
-
-
+        System.out.println(palabra);
     }
 }
+
+
+
+
+
+
+
+
+
 
 
 
