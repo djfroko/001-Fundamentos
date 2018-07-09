@@ -11,7 +11,7 @@ public class Arrays {
         //Crea un array de 10 posiciones de números con valores pedidos por teclado. Muestra por consola el indice
         // y el valor al que corresponde. Haz dos métodos, uno para rellenar valores y otro para mostrar.
 
-        /*int [] array = new int[10];
+        int [] array = new int[10];
 
         for (int i = 0; i<array.length;i++){
             System.out.println("introduce valor de la posicion " +i);
@@ -112,6 +112,7 @@ public class Arrays {
             letra++;
         }
         int posicion = 1;
+
         String palabra = "";
 
 
@@ -137,7 +138,7 @@ public class Arrays {
 
         } while (posicion != -1);
 
-        System.out.print("Las letras acumuladas son :");
+        System.out.print("Las letras acumuladas son : ");
 
         System.out.println(palabra);
     }
