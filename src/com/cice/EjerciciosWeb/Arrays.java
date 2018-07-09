@@ -86,7 +86,7 @@ public class Arrays {
         System.out.println("la suma de todos los numeros del array es: " + suma);
         System.out.println("la media del array es " + media);
 
-        */
+
         System.out.println("================================");
 
         /*5) Crea un array de caracteres que contenga de la ‘A’ a la ‘Z’ (solo las mayúsculas).
