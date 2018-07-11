@@ -11,7 +11,7 @@ public class Arrays {
         //Crea un array de 10 posiciones de números con valores pedidos por teclado. Muestra por consola el indice
         // y el valor al que corresponde. Haz dos métodos, uno para rellenar valores y otro para mostrar.
 
-        int [] array = new int[10];
+        /*int [] array = new int[10];
 
         for (int i = 0; i<array.length;i++){
             System.out.println("introduce valor de la posicion " +i);
@@ -89,18 +89,18 @@ public class Arrays {
 
         System.out.println("================================");
 
-        /*5) Crea un array de caracteres que contenga de la ‘A’ a la ‘Z’ (solo las mayúsculas).
-         Después, ve pidiendo posiciones del array por teclado y si la posicion es correcta,
-         se añadira a una cadena que se mostrara al final, se dejará de insertar cuando se introduzca un -1.
+        //5) Crea un array de caracteres que contenga de la ‘A’ a la ‘Z’ (solo las mayúsculas).
+         //Después, ve pidiendo posiciones del array por teclado y si la posicion es correcta,
+         //se añadira a una cadena que se mostrara al final, se dejará de insertar cuando se introduzca un -1.
 
-        Por ejemplo, si escribo los siguientes numeros
-        0 //Añadira la ‘A’
-        5 //Añadira la ‘F’
-        25 //Añadira la ‘Z’
-        50 //Error, inserte otro numero
+        //Por ejemplo, si escribo los siguientes numeros
+       // 0 //Añadira la ‘A’
+       // 5 //Añadira la ‘F’
+        //25 //Añadira la ‘Z’
+        //50 //Error, inserte otro numero
                 -1 //fin
 
-        Cadena resultante: AFZ*/
+        //Cadena resultante: AFZ
 
         char[] array5 = new char[26];
 
@@ -141,6 +141,130 @@ public class Arrays {
         System.out.print("Las letras acumuladas son : ");
 
         System.out.println(palabra);
+
+        System.out.println("=================================");
+
+        //Leer 10 números enteros por teclado y guardarlos en un array. Calcula y muestra
+        // la media de los números  del array.
+
+        int[] numeros = new int[10];
+        int suma1 = 0;
+        int media1 = 0;
+
+        System.out.println("introduce 10 numeros enteros");
+
+        for (int i = 0;i < 10;i++){
+            System.out.print("numeros[" + i + "]= ");
+            numeros[i] = sc.nextInt();
+        }
+
+        for (int i = 0;i < 10;i++){
+            suma1 = suma1 + numeros[i];
+
+
+        }
+
+        System.out.println("la media de los numeros es: " + suma1/numeros.length);
+
+        System.out.println("=================================");
+
+        //Leer 10 números enteros por teclado y guardarlos en un array. Calcula y muestra
+        // la media de los números que estén en las posiciones pares del array.
+
+        int[] numeros = new int[10];
+        int suma = 0;
+
+
+        System.out.println("introduce 10 numeros enteros");
+
+        for (int i = 0;i < 10;i++){
+            System.out.print("numeros[" + i + "]= ");
+            numeros[i] = sc.nextInt();
+        }
+
+        for (int i = 0;i < 10;i++){
+            if (i %2==0){
+                suma = suma + numeros[i];
+            }
+
+        }
+
+        System.out.println("la media de los numeros pares es: " + suma/numeros.length);
+
+        System.out.println("=================================");
+
+        //Leer por teclado la nota de los alumnos de una clase y calcular la nota media del grupo. Mostar los alumnos
+        // con notas superiores a la media.
+
+        int[] notas = new int[8];
+        int media = 0;
+        int media2 =0;
+
+        for (int i = 0; i < notas.length; i++) {
+
+            System.out.print("nota [" + i + "]= ");
+            notas[i] = sc.nextInt();
+            media += notas[i];
+            media2 = media/notas.length;
+
+        }
+
+        System.out.println("la nota media es: " + media2);
+
+        for(int i = 0; i< notas.length;i++){
+            if (notas[i]>media2){
+                System.out.println("notas superiores a la media [" + i + "]= "+ notas[i]);
+            }
+        }1
+
+        System.out.println("=================================");
+
+        //Guardar en un array los 20 primeros números pares
+
+        int[] pares = new int[20];
+        int aux = 2;
+
+        for (int i = 0; i < pares.length; i++) {
+
+            pares[i] += aux ;
+            aux = aux + 2;
+
+        }
+
+        for (int i = 0; i < pares.length; i++) {
+            System.out.println(pares[i]);
+        }*/
+
+        System.out.println("=================================");
+        //Contar el número de elementos positivos, negativos y ceros en un array de 10 enteros.
+
+        int[] contar = new int[10];
+        int almacenarNegativo = 0;
+        int almacenarPositivo = 0;
+        int almacenarCero = 0;
+
+        System.out.println("introdice 10 numeros (positivos, negativos y algun 0");
+
+        for (int i = 0 ; i < contar.length ; i++){
+            contar[i]= sc.nextInt();
+        }
+
+        for (int i = 0; i<contar.length; i++){
+            if (contar[i]<0){
+                 ++almacenarNegativo;
+
+            }else if (contar[i]==0){
+                almacenarCero++;
+            }else{
+                almacenarPositivo++;
+            }
+        }
+        System.out.println(" hay " + almacenarCero + " numeros 0");
+        System.out.println(" hay " + almacenarNegativo + " numeros negativos");
+        System.out.println(" hay " + almacenarPositivo + " numeros positivos");
+
+
+
     }
 }
 
