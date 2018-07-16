@@ -51,7 +51,7 @@ public class ArrayListas {
 
         for (int i = 0; i < cantidad ; i++) {
 
-           listaAltura.get(i) += media ;
+            media = listaAltura.get(i) + media;
         }
 
         media = media / cantidad;
