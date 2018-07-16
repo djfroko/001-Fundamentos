@@ -56,6 +56,8 @@ public class Bucles {
             //y quitariamos la liena de abajo i++;
         }
         System.out.println("=====do while=======");
+
+
         do {
             System.out.println("i vale " + i++);
 
